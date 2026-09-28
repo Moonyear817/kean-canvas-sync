@@ -59,3 +59,7 @@ cp config.example.json config.json
 - `scripts/canvas_scan.js`：在 Canvas 页面里运行，找出缺哪些文件
 - `scripts/file_downloads.py`：把「下载」文件夹里的新文件挪进课程文件夹，按需解压
 - `config.example.json`：示例配置
+
+## 许可证
+
+[MIT](LICENSE)
