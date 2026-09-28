@@ -1,5 +1,5 @@
 // Run in a Chrome tab on the Canvas site (logged in) via the claude-in-chrome
-// javascript_tool. Replace __DATA__ with the output of local_index.py before sending. Result is kept in window.__todo / window.__big /
+// javascript_tool. Put the output of local_index.py in place of the DATA placeholder below. Result is kept in window.__todo / window.__big /
 // window.__skipped; the returned string is a short summary (the tool truncates
 // long outputs, so read the lists in slices afterwards).
 const DATA = __DATA__;
@@ -58,7 +58,7 @@ if (me.ok) {
     }
     const list = Object.values(files);
     const pptxStems = new Set(list.filter(f => /\.pptx?$/i.test(f.display_name))
-      .map(f => f.display_name.replace(/\.[^.]+$/, '').toLowerCase()));
+      .map(f => f.display_name.normalize('NFC').replace(/\.[^.]+$/, '').toLowerCase()));
 
     for (const f of list) {
       const name = f.display_name, lower = name.normalize('NFC').toLowerCase();
