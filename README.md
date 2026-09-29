@@ -1,4 +1,6 @@
-# kean-canvas-sync
+# kean-canvas-sync（Claude 版）
+
+> 这是 **Claude 版**，给 Claude Code / Claude 桌面 app 用。用 OpenAI Codex 的同学请看 **Codex 版**：[kean-canvas-sync-codex](https://github.com/Moonyear817/kean-canvas-sync-codex)。
 
 一个 [Claude Code](https://claude.com/claude-code) skill：把 Kean / 温州肯恩大学（WKU）Canvas（`kean.instructure.com`）上**还没下载的课件**，自动下载并按「学期 / 课程代码」归档到本地文件夹。
 
@@ -32,7 +34,7 @@
 需要：macOS、Claude Code 或 Claude 桌面 app、Chrome，以及已安装并登录的 Claude in Chrome 扩展。
 
 ```bash
-git clone https://github.com/Moonyear817/kean-canvas-sync.git ~/.claude/skills/canvas-sync
+git clone https://github.com/Moonyear817/kean-canvas-sync-claude.git ~/.claude/skills/canvas-sync
 cd ~/.claude/skills/canvas-sync
 cp config.example.json config.json
 ```
